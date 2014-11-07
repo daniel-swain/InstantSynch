@@ -20,9 +20,12 @@
 		301795451A0C09E100141A80 /* YTPlayerView-iframe-player.html in Resources */ = {isa = PBXBuildFile; fileRef = 301795411A0C09E100141A80 /* YTPlayerView-iframe-player.html */; };
 		301795461A0C09E100141A80 /* YTPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 301795441A0C09E100141A80 /* YTPlayerView.m */; };
 		301795491A0C0AAC00141A80 /* PlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 301795481A0C0AAC00141A80 /* PlayerViewController.m */; };
-		3044001B1A0D39A700CE7DE0 /* Pause.png in Resources */ = {isa = PBXBuildFile; fileRef = 304400191A0D39A700CE7DE0 /* Pause.png */; };
-		3044001C1A0D39A700CE7DE0 /* Play.png in Resources */ = {isa = PBXBuildFile; fileRef = 3044001A1A0D39A700CE7DE0 /* Play.png */; };
-		3044001E1A0D39B200CE7DE0 /* FastFoward.png in Resources */ = {isa = PBXBuildFile; fileRef = 3044001D1A0D39B200CE7DE0 /* FastFoward.png */; };
+		304400221A0D537300CE7DE0 /* Stop.png in Resources */ = {isa = PBXBuildFile; fileRef = 3044001F1A0D537300CE7DE0 /* Stop.png */; };
+		304400231A0D537300CE7DE0 /* Sync.png in Resources */ = {isa = PBXBuildFile; fileRef = 304400201A0D537300CE7DE0 /* Sync.png */; };
+		304400241A0D537300CE7DE0 /* Unsync.png in Resources */ = {isa = PBXBuildFile; fileRef = 304400211A0D537300CE7DE0 /* Unsync.png */; };
+		304400271A0D541300CE7DE0 /* Pause .png in Resources */ = {isa = PBXBuildFile; fileRef = 304400251A0D541300CE7DE0 /* Pause .png */; };
+		304400281A0D541300CE7DE0 /* Play.png in Resources */ = {isa = PBXBuildFile; fileRef = 304400261A0D541300CE7DE0 /* Play.png */; };
+		3044002A1A0D5A2000CE7DE0 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 304400291A0D5A2000CE7DE0 /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,9 +60,12 @@
 		301795441A0C09E100141A80 /* YTPlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTPlayerView.m; sourceTree = "<group>"; };
 		301795471A0C0AAC00141A80 /* PlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerViewController.h; sourceTree = "<group>"; };
 		301795481A0C0AAC00141A80 /* PlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerViewController.m; sourceTree = "<group>"; };
-		304400191A0D39A700CE7DE0 /* Pause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Pause.png; sourceTree = "<group>"; };
-		3044001A1A0D39A700CE7DE0 /* Play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Play.png; sourceTree = "<group>"; };
-		3044001D1A0D39B200CE7DE0 /* FastFoward.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FastFoward.png; sourceTree = "<group>"; };
+		3044001F1A0D537300CE7DE0 /* Stop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Stop.png; sourceTree = "<group>"; };
+		304400201A0D537300CE7DE0 /* Sync.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sync.png; sourceTree = "<group>"; };
+		304400211A0D537300CE7DE0 /* Unsync.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Unsync.png; sourceTree = "<group>"; };
+		304400251A0D541300CE7DE0 /* Pause .png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Pause .png"; sourceTree = "<group>"; };
+		304400261A0D541300CE7DE0 /* Play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Play.png; sourceTree = "<group>"; };
+		304400291A0D5A2000CE7DE0 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3044002A1A0D5A2000CE7DE0 /* QuartzCore.framework in Frameworks */,
 				3017953E1A0C025E00141A80 /* AVFoundation.framework in Frameworks */,
 				3017953C1A0C025900141A80 /* AVKit.framework in Frameworks */,
 			);
@@ -85,6 +92,7 @@
 		300FC74B1A0AD13800DA146C = {
 			isa = PBXGroup;
 			children = (
+				304400291A0D5A2000CE7DE0 /* QuartzCore.framework */,
 				3017953D1A0C025E00141A80 /* AVFoundation.framework */,
 				3017953B1A0C025900141A80 /* AVKit.framework */,
 				300FC7561A0AD13800DA146C /* InstantSynch */,
@@ -150,9 +158,11 @@
 		301795301A0BDFA100141A80 /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				3044001D1A0D39B200CE7DE0 /* FastFoward.png */,
-				304400191A0D39A700CE7DE0 /* Pause.png */,
-				3044001A1A0D39A700CE7DE0 /* Play.png */,
+				304400251A0D541300CE7DE0 /* Pause .png */,
+				304400261A0D541300CE7DE0 /* Play.png */,
+				3044001F1A0D537300CE7DE0 /* Stop.png */,
+				304400201A0D537300CE7DE0 /* Sync.png */,
+				304400211A0D537300CE7DE0 /* Unsync.png */,
 				301795311A0BDFBC00141A80 /* BackgroundNoise.png */,
 			);
 			name = Images;
@@ -264,14 +274,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3044001B1A0D39A700CE7DE0 /* Pause.png in Resources */,
 				301795321A0BDFBC00141A80 /* BackgroundNoise.png in Resources */,
-				3044001E1A0D39B200CE7DE0 /* FastFoward.png in Resources */,
+				304400231A0D537300CE7DE0 /* Sync.png in Resources */,
 				300FC7631A0AD13800DA146C /* Main.storyboard in Resources */,
 				300FC7681A0AD13800DA146C /* LaunchScreen.xib in Resources */,
-				3044001C1A0D39A700CE7DE0 /* Play.png in Resources */,
+				304400221A0D537300CE7DE0 /* Stop.png in Resources */,
+				304400241A0D537300CE7DE0 /* Unsync.png in Resources */,
 				300FC7651A0AD13800DA146C /* Images.xcassets in Resources */,
+				304400281A0D541300CE7DE0 /* Play.png in Resources */,
 				301795451A0C09E100141A80 /* YTPlayerView-iframe-player.html in Resources */,
+				304400271A0D541300CE7DE0 /* Pause .png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,7 +432,7 @@
 				INFOPLIST_FILE = InstantSynch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = 2;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -431,7 +443,7 @@
 				INFOPLIST_FILE = InstantSynch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = 2;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

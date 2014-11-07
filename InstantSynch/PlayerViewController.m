@@ -17,6 +17,7 @@ typedef enum {
 @interface PlayerViewController ()
 {
     VideoSource videoSourceType;
+    BOOL isPlaying;
 }
 
 @property (weak, nonatomic) IBOutlet UIView *videoView;
@@ -25,9 +26,44 @@ typedef enum {
 
 @implementation PlayerViewController
 
+@synthesize videoTitle, playToggle, stop, sync, unsync, address, playerView;
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    isPlaying = NO;
+    
+    // Setup Title and Address
+    [videoTitle setEditable:NO];
+    [videoTitle setBackgroundColor:[UIColor clearColor]];
+    [videoTitle setTextColor: [UIColor whiteColor]];
+    
+    [address setBackgroundColor: [UIColor clearColor]];
+    [address setTextColor: [UIColor whiteColor]];
+    
+    address.clearsOnBeginEditing = YES;
+    address.layer.cornerRadius=8.0f;
+    address.layer.masksToBounds=YES;
+    address.layer.borderColor=[[UIColor whiteColor]CGColor];
+    address.layer.borderWidth= 1.0f;
+    
+    // Setup Buttons
+    [playToggle setTitle:@"" forState:UIControlStateNormal];
+    [stop setTitle:@"" forState:UIControlStateNormal];
+    [sync setTitle:@"" forState:UIControlStateNormal];
+    [unsync setTitle:@"" forState:UIControlStateNormal];
+    
+    [playToggle setBackgroundImage:[UIImage imageNamed:@"Play"] forState:UIControlStateNormal];
+    [stop setBackgroundImage:[UIImage imageNamed:@"Stop"] forState:UIControlStateNormal];
+    [sync setBackgroundImage:[UIImage imageNamed:@"Sync"] forState:UIControlStateNormal];
+    [unsync setBackgroundImage:[UIImage imageNamed:@"Unsync"] forState:UIControlStateNormal];
+    
+    if(!isPlaying) {
+        [videoTitle setText:@"Nothing is playing."];
+        [address setText:@"Enter a Youtube id."];
+        [playerView setBackgroundColor: [UIColor clearColor]];
+    }
+    
+    self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"BackgroundNoise"]];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -38,6 +74,25 @@ typedef enum {
 - (void)setVideoSourceType: (VideoSource) newSource {
     videoSourceType = newSource;
 }
+
+#pragma mark - Youtube Videos
+
+
+
+/**
+ *  Changes the icon for the playPause button.
+ */
+- (IBAction)togglePlayPause: (id) sender {
+    if(!isPlaying) {
+        [sender setBackgroundImage: [UIImage imageNamed:@"Play"] forState:UIControlStateNormal];
+        isPlaying = YES;
+    } else {
+        [sender setBackgroundImage: [UIImage imageNamed:@"Pause"] forState:UIControlStateNormal];
+        [videoTitle setText:@"Playing something."];
+        isPlaying = NO;
+    }
+}
+
 
 /*
 #pragma mark - Navigation

@@ -85,10 +85,11 @@ typedef enum {
 - (IBAction)togglePlayPause: (id) sender {
     if(!isPlaying) {
         [sender setBackgroundImage: [UIImage imageNamed:@"Play"] forState:UIControlStateNormal];
+        [videoTitle setText:@"Paused."];
         isPlaying = YES;
     } else {
         [sender setBackgroundImage: [UIImage imageNamed:@"Pause"] forState:UIControlStateNormal];
-        [videoTitle setText:@"Playing something."];
+        [videoTitle setText:@"Playing."];
         isPlaying = NO;
     }
 }

@@ -23,7 +23,7 @@
 		304400221A0D537300CE7DE0 /* Stop.png in Resources */ = {isa = PBXBuildFile; fileRef = 3044001F1A0D537300CE7DE0 /* Stop.png */; };
 		304400231A0D537300CE7DE0 /* Sync.png in Resources */ = {isa = PBXBuildFile; fileRef = 304400201A0D537300CE7DE0 /* Sync.png */; };
 		304400241A0D537300CE7DE0 /* Unsync.png in Resources */ = {isa = PBXBuildFile; fileRef = 304400211A0D537300CE7DE0 /* Unsync.png */; };
-		304400271A0D541300CE7DE0 /* Pause .png in Resources */ = {isa = PBXBuildFile; fileRef = 304400251A0D541300CE7DE0 /* Pause .png */; };
+		304400271A0D541300CE7DE0 /* Pause.png in Resources */ = {isa = PBXBuildFile; fileRef = 304400251A0D541300CE7DE0 /* Pause.png */; };
 		304400281A0D541300CE7DE0 /* Play.png in Resources */ = {isa = PBXBuildFile; fileRef = 304400261A0D541300CE7DE0 /* Play.png */; };
 		3044002A1A0D5A2000CE7DE0 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 304400291A0D5A2000CE7DE0 /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
@@ -63,7 +63,7 @@
 		3044001F1A0D537300CE7DE0 /* Stop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Stop.png; sourceTree = "<group>"; };
 		304400201A0D537300CE7DE0 /* Sync.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sync.png; sourceTree = "<group>"; };
 		304400211A0D537300CE7DE0 /* Unsync.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Unsync.png; sourceTree = "<group>"; };
-		304400251A0D541300CE7DE0 /* Pause .png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Pause .png"; sourceTree = "<group>"; };
+		304400251A0D541300CE7DE0 /* Pause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Pause.png; sourceTree = "<group>"; };
 		304400261A0D541300CE7DE0 /* Play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Play.png; sourceTree = "<group>"; };
 		304400291A0D5A2000CE7DE0 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -158,7 +158,7 @@
 		301795301A0BDFA100141A80 /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				304400251A0D541300CE7DE0 /* Pause .png */,
+				304400251A0D541300CE7DE0 /* Pause.png */,
 				304400261A0D541300CE7DE0 /* Play.png */,
 				3044001F1A0D537300CE7DE0 /* Stop.png */,
 				304400201A0D537300CE7DE0 /* Sync.png */,
@@ -283,7 +283,7 @@
 				300FC7651A0AD13800DA146C /* Images.xcassets in Resources */,
 				304400281A0D541300CE7DE0 /* Play.png in Resources */,
 				301795451A0C09E100141A80 /* YTPlayerView-iframe-player.html in Resources */,
-				304400271A0D541300CE7DE0 /* Pause .png in Resources */,
+				304400271A0D541300CE7DE0 /* Pause.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

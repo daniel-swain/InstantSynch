@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>5FA812DA-DC0D-4092-94C7-6D87AE183F2C</string>
+	<key>IDESourceControlProjectName</key>
+	<string>InstantSynch</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>365632E1E823FF59E51DFE842F11A0CBB1324AA9</key>
+		<string>https://github.com/wisard1862/InstantSynch.git</string>
+		<key>EBB565546EA0F48D5F0B4BC4C27B127376818D8A</key>
+		<string>https://github.com/Dustinschie/iOS-Project-Ideas.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>InstantSynch.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>365632E1E823FF59E51DFE842F11A0CBB1324AA9</key>
+		<string>../..</string>
+		<key>EBB565546EA0F48D5F0B4BC4C27B127376818D8A</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/wisard1862/InstantSynch.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>365632E1E823FF59E51DFE842F11A0CBB1324AA9</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>EBB565546EA0F48D5F0B4BC4C27B127376818D8A</string>
+			<key>IDESourceControlWCCName</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>365632E1E823FF59E51DFE842F11A0CBB1324AA9</string>
+			<key>IDESourceControlWCCName</key>
+			<string>InstantSynch</string>
+		</dict>
+	</array>
+</dict>
+</plist>

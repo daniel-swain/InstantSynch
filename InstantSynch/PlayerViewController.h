@@ -10,7 +10,7 @@
 #import <QuartzCore/QuartzCore.h>
 #import "YTPlayerView.h"
 
-@interface PlayerViewController : UIViewController
+@interface PlayerViewController : UIViewController<YTPlayerViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UITextView *videoTitle;
 @property (weak, nonatomic) IBOutlet UIButton *playToggle;
@@ -18,6 +18,8 @@
 @property (weak, nonatomic) IBOutlet UIButton *sync;
 @property (weak, nonatomic) IBOutlet UIButton *unsync;
 @property (weak, nonatomic) IBOutlet UITextField *address;
+@property (weak, nonatomic) IBOutlet UITextField *startLoop;
+@property (weak, nonatomic) IBOutlet UITextField *endLoop;
 @property (weak, nonatomic) IBOutlet YTPlayerView *playerView;
 -(IBAction)togglePlayPause:(id)sender;
 @end
